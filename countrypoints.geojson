@@ -1,0 +1,25 @@
+{"type": "FeatureCollection",
+"features":[
+{
+"type": "Feature",
+"id": "FRA",
+"properties" :{"name":"France"},
+"geometry":
+{"type":"Point",
+"coordinates":[2.213749, 46.227638]
+}},
+{"type": "Feature",
+"id": "RUS",
+"properties": {"name":"Russia"},
+"geometry":
+{"type":"Point",
+"coordinates":[ 105.318756, 61.524010]
+}},
+{"type": "Feature",
+"id": "CHN",
+"properties": {"name":"China"},
+"geometry":
+{"type":"Point",
+"coordinates":[104.195396, 35.861660]
+}}
+]}
