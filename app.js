@@ -1,3 +1,5 @@
+themes = 'themes.json';
+
 const COUNTRIES =
   'countries.geojson';
 const COUNTRY_POINTS =
@@ -8,7 +10,7 @@ const INITIAL_VIEW_STATE = {
   longitude: 2.213749,
   zoom: 4,
   bearing: 0,
-  pitch: 20
+  pitch: 30
 };
 
 const deck = new Deck({
@@ -34,6 +36,7 @@ const deck = new Deck({
       id: 'country_points',
       data: COUNTRY_POINTS,
       filled: true,
+      status: 0,
       lineWidthMinPixels: 20,
       opacity: 1,
       getLineColor: [200, 255, 200],
@@ -41,10 +44,32 @@ const deck = new Deck({
       pickable: true,
       autoHighlight: true,
       onClick: info =>
-        info.object && alert(`${info.object.properties.name} (${info.object.id})`)
+        info.object && expandTree(info.object.properties.name),
+        status: 1
     })
   ]
 });
+
+function expandTree(name) {
+  var n = 0;
+  var coordinates = 
+  for each(var theme in themes[name]) {
+    if (n < 3) {
+
+    }
+
+    else(n )
+    new GeoJsonLayer ({
+      id:
+    })
+  }
+}
+
+function collapseTree(name) {
+
+}
+
+function checkChildren(name) {}
 
 // For automated test cases
 /* global document */
