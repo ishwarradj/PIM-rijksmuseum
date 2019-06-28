@@ -13,7 +13,7 @@
 "properties": {"name":"Russia"},
 "geometry":
 {"type":"Point",
-"coordinates":[ 105.318756, 61.524010]
+"coordinates":[105.318756, 61.524010]
 }},
 {"type": "Feature",
 "id": "CHN",
@@ -22,4 +22,6 @@
 {"type":"Point",
 "coordinates":[104.195396, 35.861660]
 }}
-]}
+]
+}
+
